@@ -70,10 +70,8 @@ function centroid = segment_extrinsic(I, depth_frame)
         obj_height = obj_height * 100; % convert to cm
         
         % Check if size is within range
-        %if obj_width < 5 && obj_width > 6 && ...
-                %obj_height < 4.5 && obj_height > 5.5
-        if obj_width < 3.5 && obj_width > 6 && ...
-                obj_height < 3.5 && obj_height > 5.5
+        if obj_width < 5 && obj_width > 6 && ...
+                obj_height < 4.5 && obj_height > 5.5
             continue;
         end  
         
